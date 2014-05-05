@@ -1,0 +1,178 @@
+#aboutus .lightStyle {
+
+  background: #ff0000 url(../images/bg_pattern_aboutus.jpg) 50% 0 no-repeat;
+
+  background-image: -Webkit-image-set(url(../images/bg_pattern_aboutus.jpg) 1x, url(../images/bg_pattern_aboutus@2x.jpg) 2x);
+
+}
+
+
+
+.move_to_aboutus {
+
+  background:url(../images/footer_bg_aboutus.png) center top no-repeat;
+
+  background-image: -Webkit-image-set(url(../images/footer_bg_aboutus.png) 1x, url(../images/footer_bg_aboutus@2x.png) 2x);  /* Image for Retina */
+
+}
+
+
+
+#services.lightStyle {
+
+  background: #ff0000 url(../images/bg_pattern_services.jpg) 50% 0 no-repeat;
+
+  background-image: -Webkit-image-set(url(../images/bg_pattern_services.jpg) 1x, url(../images/bg_pattern_services@2x.jpg) 2x);
+
+}
+
+
+
+.move_to_services {
+
+  background:url(../images/footer_bg_services.png) center top no-repeat;
+
+  background-image: -Webkit-image-set(url(../images/footer_bg_services.png) 1x, url(../images/footer_bg_services@2x.png) 2x);  /* Image for Retina */
+
+}
+
+
+
+#portfolio.lightStyle {
+
+  background: #ff0000 url(../images/bg_pattern_portfolio.jpg) 50% 0 no-repeat;
+
+  background-image: -Webkit-image-set(url(../images/bg_pattern_portfolio.jpg) 1x, url(../images/bg_pattern_portfolio@2x.jpg) 2x);
+
+}
+
+
+
+.move_to_portfolio {
+
+  background:url(../images/footer_bg_portfolio.png) center top no-repeat;
+
+  background-image: -Webkit-image-set(url(../images/footer_bg_portfolio.png) 1x, url(../images/footer_bg_portfolio@2x.png) 2x);  /* Image for Retina */
+
+}
+
+
+
+#contactus .lightStyle {
+
+  background: #ff0000 url(../images/bg_pattern_contactus.jpg) 50% 0 no-repeat;
+
+  background-image: -Webkit-image-set(url(../images/bg_pattern_contactus.jpg) 1x, url(../images/bg_pattern_contactus@2x.jpg) 2x);
+
+}
+
+
+
+.move_to_contactus {
+
+  background:url(../images/footer_bg_contactus.png) center top no-repeat;
+
+  background-image: -Webkit-image-set(url(../images/footer_bg_contactus.png) 1x, url(../images/footer_bg_contactus@2x.png) 2x);  /* Image for Retina */
+
+}
+
+
+
+.header_bg  {
+
+  overflow: hidden;
+
+}
+
+
+
+.altlogo {
+
+  position: absolute;
+
+  top: 0;
+
+  left: 50%;
+
+  margin-left: -480px;
+
+  width: 960px;
+
+}
+
+
+
+.altlogo a {
+
+  width: 200px;
+
+  display: block;
+
+  margin: 10px 0 0 81px;
+
+}
+
+
+
+.altlogo a img {
+
+  width: 100%;
+
+}
+
+
+
+.pgScrollUp {
+
+  left:15px;
+
+}
+
+
+
+.logo img {
+
+  max-width: 320px;
+
+  bottom: 4px;
+
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1150px) {
+
+  .altlogo a {
+
+    width: 180px;
+
+    margin: 12px 0 0 184px;
+
+  }
+
+  .logo img {
+
+    bottom: 14px;
+
+    max-width: 220px;
+
+  }
+
+}
+
+
+
+/* Note: Design for a width of 320px */
+
+@media only screen and (max-width: 767px) {
+
+  .logo img {
+
+    max-width: 160px;
+
+    bottom:82px;
+
+  }
+
+}
+

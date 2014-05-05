@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!-- Basic Page Needs ================================================== -->
+<meta charset="utf-8">
+<title>Basher.com</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="description" content="">
+<meta name="author" content="Basher">
+<!-- Mobile Specific Metas ================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!-- CSS ================================================== -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- Favicons ================================================== -->
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+<!-- Included CSS files ================================================== -->
+<link rel="stylesheet" type="text/css"  href="css/main.css">
+<link rel="stylesheet" type="text/css"  href="css/base.css">
+<link rel="stylesheet" type="text/css"  href="css/color.css">
+<link rel="stylesheet" type="text/css"  href="css/skeleton.css">
+<link rel="stylesheet" type="text/css"  href="css/jquery.fancybox-1.3.4.css" media="screen" />
+<link rel="stylesheet" type="text/css"  href="css/flexslider.css" media="screen" />
+<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/supersized.shutter.css" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css"  href="css/modal.css">
+<!--[if gte IE 9]>
+<style type="text/css">	.gradient { filter: none; }	</style>
+<![endif]-->
+<link rel="stylesheet" href="css/custom.css" type="text/css" media="screen" />
+</head>
+
+<body>
+	<style>
+		.altlogo { z-index:2; width:320px; }
+		@media only screen and (min-width: 768px) and (max-width: 1150px) {
+			.altlogo { left:45%; }
+		}
+		@media only screen and (max-width: 767px) {
+			.altlogo { display:none; }
+		}
+	</style>
+	<div class="pageFade" ></div>
+	<div class="header black_nav" >
+		<div class="header_bg" style="overflow: hidden;">
+			<div class="altlogo">
+				<a href="../index.php">
+					<img src="images/logo.png" data-src-small="images/logo_s.png" data-retina="yes">
+				</a>
+			</div>
+		</div>
+		<div class="container" >
+			<div class="pgScrollUp"></div>
+			<div class="nav" >
+				<ul id="navHolder" >
+					<!--  Add require site page navigation -->
+					<li><a href="#!home" class="first">HOME</a></li>
+					<li><a href="#!overview">Features</a></li>
+					<li><a href="#!services">SPECS</a></li>
+					<li><a href="#!gallery">GALLERY</a></li>
+					<li><a href="#!contactus">CONTACT US</a></li>
+					<li><a href="http://www.hobbyking.com" class="last" target="_blank">BUY NOW</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>	
+	<!-- Supersized home page slider show Arrow Navigation-->
+	<div id="superNav">
+		<a id="prevslide" class="load-item" ></a>
+		<a id="nextslide" class="load-item" ></a>
+		<a id="play-button"><img id="pauseplay" src="images/supersized/pause.png" /></a>
+	</div>	
+	<div class="contentWrapper homeSlider" data-id="!home" id="home" >
+		<div class="homepage_con">
+			<div class="container" >
+				<!-- Place your logo here. data-src-small use to add logo for mobile device -->
+				<div class="logo" >
+					<a href="../index.php"><img src="images/logo.png" data-src-small="images/logo_s.png" data-retina="yes" alt="logo text"></a>
+				</div>
+			</div>
+			
+			<!-- Homepage fullscreen slideshow Title text 1 -->
+			<div class="home_slider_title1" >
+				<div class="textAlignCenter">
+					<h1><span class="textBackground">Nitro Circus</span></h1>
+					<h2><span class="light_color">1/10 4WD Short Course Truck</span></h2>
+				</div>
+			</div>
+			
+			<!-- Page scroll down to Next page -->
+			<a class="move_down_white bottomAlign move_to_aboutus" href="#!overview" ><span></span></a>
+		</div>
+	</div>
+	
+	<!-- About us  page -->
+	<div class="contentWrapper"  data-id="!overview" id="aboutus" >
+		<div class="fullWidth titleTop lightStyle">
+			<div class="container" >
+				<div class="sixteen columns">
+					<div class="mobile_spacing">
+						<span class="title_text" >Features</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fullWidth darkStyle" style="padding-top:0px;">
+			<div class="container" >
+			<!--<div class="separator_mini"></div>-->
+				<style>
+				@media (max-width: 1199px) {
+					.fea_dot { display:none; }				
+					.feats { display:none; }	
+					.mobile_fea { display:block; }
+					.mobile_fea ul { list-style-type:disc; }
+					.line1, .line2, .line3, .line4, .line5, .line6 { display:none; }
+				}
+				
+				@media (min-width: 1200px) {
+					.fea_dot { position:absolute; top:0; z-index:1; cursor:pointer; }
+					.fea_dot img { 
+						box-shadow: 1.5px 1.5px 4px 2px rgba(0,0,0,0.6);
+						-webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.65);
+						-moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.65); 
+					}
+					.dot1 { margin-top:256px; margin-left:680px; }
+					.dot2 { margin-top:140px; margin-left:530px; }
+					.dot3 { margin-top:230px; margin-left:240px; }
+					.dot4 { margin-top:440px; margin-left:610px; }
+					.dot5 { margin-top:310px; margin-left:550px; }
+					
+					.lines { border-bottom:1px solid #ffffff; width:0px; position:absolute; top:0; z-index:2; }
+					.lines_l { border-bottom:1px solid #ffffff; width:0px; position:absolute; top:0; z-index:2; }
+					.line1 { margin-top:155px; margin-left:500px; }
+					.line2 { margin-top:18px; margin-left:520px; width:0px; }
+					.line3 { margin-top:258px; margin-left:110px;}
+					.line4 { margin-top:468px; margin-left:600px; }
+					.line5 { margin-top:203px; margin-left:643px; width:0px; }
+					
+					.pos_text1 { position:absolute; top:0; z-index:2; margin-top:177px; margin-left:500px; }
+					.pos_text2 { position:absolute; top:0; z-index:2; margin-top:40px; margin-left:175px; }
+					.pos_text3 { position:absolute; top:0; z-index:2; margin-top:280px; margin-left:110px; }
+					.pos_text4 { position:absolute; top:0; z-index:2; margin-top:490px; margin-left:600px; }
+					.pos_text5 { position:absolute; top:0; z-index:2; margin-top:225px; margin-left:205px; }
+					
+					.feats { font-size:15px; font-weight:bold; padding:12px 17px;
+						background:rgb(0,0,0);
+						background: transparent\9;
+						background:rgba(0,0,0,0.6);
+						filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+						zoom: 1;
+					}
+					.feats:nth-child(n) { filter: none; }
+					
+					.fea_text1 { height:50px; display:none; *display:none; }
+					.fea_text2 { height:100px; display:none; *display:none; }
+					.fea_text3 { height:125px; display:none; *display:none; }
+					.fea_text4 { height:75px; display:none; *display:none; }
+					.fea_text5 { height:50px; display:none; *display:none; }
+					
+					.mobile_fea { display:none; }
+				}		
+				</style>
+				
+				<!--[if lt IE 9]>
+				<style>
+					.fea_dot { display:none; }				
+					.feats { display:none; }	
+					.mobile_fea ul { list-style-type:disc; margin-top:-150px; }
+					.line1, .line2, .line3, .line4, .line5, .line6 { *display:none; }
+					IMG.scale-img { width:80%; margin-left:80px; }
+				</style>
+				<![endif]-->
+				
+				<div>
+					<img class="scale-img" src="images/feature/feature_car.png" data-src-small="" data-retina="yes">
+					
+					<div class="fea_dot dot1"><img src="images/feature/dot.png" alt="Click me" /></div>
+					<div class="lines line1">&nbsp;</div>
+					
+					<div class="fea_dot dot2"><img src="images/feature/dot.png" alt="Click me" /></div>
+					<div class="lines_l line2">&nbsp;</div>
+					
+					<div class="fea_dot dot3"><img src="images/feature/dot.png" alt="Click me" /></div>
+					<div class="lines line3">&nbsp;</div>
+					
+					<div class="fea_dot dot4"><img src="images/feature/dot.png" alt="Click me" /></div>
+					<div class="lines line4">&nbsp;</div>
+					
+					<div class="fea_dot dot5"><img src="images/feature/dot.png" alt="Click me" /></div>
+					<div class="lines_l line5">&nbsp;</div>
+					
+					<div class="pos_text1">
+						<div class="feats fea_text1">
+							- Officially licensed by Nitro Circus<br />
+							- Pre-painted and trimmed body shell w/decal sheet included
+						</div>
+					</div>
+					<div class="pos_text2">
+						<div class="feats fea_text2">
+							- Powerful 2080KV Brushless Inrunner Motor<br />
+							- 35A ESC w/ Reverse<br />
+							- 2~3S Lipo Compatible<br />
+							- Heavy Duty Steering Servo
+						</div>
+					</div>
+					<div class="pos_text3">
+						<div class="feats fea_text3">
+							- Hardened metal drive cups <br />
+							- Front/Center/Rear sealed differentials <br />
+							- Heavy duty drive shafts<br />
+							- Hardened steel pinion gear<br />
+							- Alloy Chassis plate and top deck sections
+						</div>
+					</div>
+					<div class="pos_text4">
+						<div class="feats fea_text4">
+							- Soft compound tires for increased traction<br />
+							- Full time 4WD<br />
+							- Full ball bearings
+						</div>
+					</div>
+					<div class="pos_text5">
+						<div class="feats fea_text5">
+							- Adjustable camber, caster and shock mounting positions<br />
+							- Oil filled, big bore shock absorbers
+						</div>
+					</div>
+				</div>
+				
+				<br />
+				<div class="mobile_fea">
+					<ul>
+						<li>Officially licensed by Nitro Circus</li>
+						<li>Powerful 2080KV Brushless Inrunner Motor
+						<li>Oil filled, big bore shock absorbers</li>
+						<li>Heavy duty drive shafts</li>
+						<li>Adjustable camber, caster and shock mounting positions</li>
+						<li>Full time 4WD</li>
+						<li>Adjustable screw shock absorbers</li>
+						<li>Soft compound tires for increased traction</li>
+						<li>Full ball bearings</li>
+						<li>Front/Center/Rear sealed differentials pre-installed</li>
+						<li>35A ESC w/ Reverse pre-installed</li>
+						<li>Pre-painted and trimmed body shell w/decal sheet included</li>
+						<li>Hardened steel pinion gear
+						<li>Hardened metal drive cups</li>
+						<li>Alloy Chassis plate and top deck sections</li>
+					</ul>
+				</div>
+				
+				<div style="margin-bottom:50px;"></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- fresh air  -->
+	<div class="contentWrapper  titleTop lightStyle">
+		<div class="container" >
+			<div class="sixteen columns">
+				<div class="mobile_spacing">
+					<span class="title_text" ></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Parallax content data-src attribute is used to set the larg size image for desktop and data-src-small is used to set the small size image for mobile device -->
+	<div class="contentWrapper parallax" data-src="" data-src-small="" >
+		<div class="parallaxPattern"></div>
+		<div class="container" ></div>
+		<!-- Page scroll down to Next page -->
+		<a class=" move_down_white move_to_services" href="#!services"><span></span></a>
+	</div>
+	
+	<!-- Spec Page -->
+	<div class="contentWrapper titleTop lightStyle" data-id="!services" id="services" >
+		<div class="container" >
+			<div class="sixteen columns">
+				<div class="mobile_spacing">
+					<span class="title_text" >SPECS</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="contentWrapper darkStyle" >
+		<div class="container" >
+			<div class="sixteen columns">
+				<hr>
+				<div class="separator_mini"></div>
+				<div class="mini_description" style="font-size:18px;">
+					With a host of features and made from high quality materials, this truck has the specs to impress. What does this mean? Great performance at your local track or bashing spot!
+				</div>
+			</div><hr>
+			<div class="separator_mini"></div>
+			
+			<style>
+			<!-- styles for spec -->
+			/*
+			@media only screen and (max-width: 767px) {
+				.specTable { margin-top:20px; }				
+			}
+			.specTable tr { border:1px solid #c0c0c0; font-size:14px; }
+			.specTable tr td, th { padding:4px 16px; }
+			.specTable th { font-weight:bold; text-align:left }
+			*/
+			</style>
+			<div class="sixteen columns" >
+				<div class="mobile_spacing">
+					<ul class="tabs">
+						<li><a href="#PowerSystem" class="active" >Power System</a></li>
+						<li><a href="#Drivetrain">Drivetrain</a></li>
+						<li><a href="#Chassis">Chassis</a></li>
+						<li><a href="#Measurements">Measurements</a></li>
+					</ul>
+					
+					<ul class="tabs-content">
+						<li id="PowerSystem"  class="active">
+							<div class="row alpha ">
+								<div class="mobile_right_spacing">
+									<h4 >Power System</h4>
+									<p>
+										Powerful 2080KV Brushless Inrunner Motor<br />
+										35A Brushless ESC w/ Reverse<br />
+										2 or 3S Lipo Battery with HXT 4mm Connector (Required)<br />
+										High Torque Steering Servo<br />
+									</p>
+								</div>
+							</div>
+							<hr/>
+						</li>
+						<li id="Drivetrain">
+							<div class="row alpha ">
+								<div class="mobile_right_spacing">
+									<h4 >Drivetrain</h4>
+									<p>
+										Full time 4WD<br />
+										Front/Center/Rear sealed differentials<br />
+										Hardened steel pinion gear<br />
+										Heavy duty drive shafts<br />
+										Hardened metal drive cups<br />
+										Full ball bearings<br />
+										Soft compound 110mm short course truck tires
+									</p>
+								</div>
+							</div>
+							<hr/>
+						</li>
+						<li id="Chassis">
+							<div class="row alpha ">
+								<div class="mobile_right_spacing">
+									<h4 >Chassis</h4>
+									<p>
+										Alloy chassis plate and top deck sections<br />
+										Fully adjustable screw shock absorbers<br />
+										Oil filled, big bore shock absorbers<br />
+										Adjustable toe-in and toe-out<br />
+										Adjustable camber and castor<br />
+										Independant wishbone suspension
+									</p>
+								</div>
+							</div><hr/>
+						</li>
+						<li id="Measurements">
+							<div class="row alpha ">
+								<div class="mobile_right_spacing">
+									<h4 >Measurements</h4>
+									<p>	
+										Length: 550mm<br />
+										Width: 310mm<br />
+										Height: 190mm<br />
+										Ground clearance: 28~42mm (Adjustable)<br />
+										Battery area: 140x50x50mm
+									</p>
+								</div>
+							</div><hr/>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			
+			<style>
+			.circleHolder { width:215px; }
+			@media only screen and (min-width: 768px) and (max-width: 1150px) {
+				.circleHolder { width:180px; }
+			}
+			</style>
+			
+			
+			<div class="row">
+				<a class="circleHolder alignCenter single_image" data-title='<h5 class="light_color">Mini description about project</h5>'  href="" target="_self" >
+					<div class="flipPanel smallCircle" >
+						<div class="circle front service_icon1_w" ></div>
+						<div class="circle back service_icon1_w_back" ></div>
+					</div>
+					<span class="description">
+						<h4>Brushless</h4>
+					</span>
+				</a>
+				<a class="circleHolder alignCenter single_image" data-title='<h5 class="light_color">Load YouTube and Vimeo video</h5>'  href="" target="_self" >
+					<div class="flipPanel smallCircle" >
+						<div class="circle front service_icon6_w"></div>
+						<div class="circle back service_icon6_w_back"></div>
+					</div>
+					<span class="description">
+						<h4>2~3S Lipo</h4>
+					</span>
+				</a>
+				
+				<a class="circleHolder alignCenter single_image" data-title='<span class="light_color">Mini description about project, eorem ipsum dolor sit amet, consectetur adipisicing elit</span>'  href="" target="_self" >
+					<div class="flipPanel smallCircle" >
+						<div class="circle front service_icon3_w" ></div>
+						<div class="circle back service_icon3_w_back" ></div>
+					</div>
+					<span class="description">
+						<h4>4X4</h4>
+					</span>
+				</a>
+
+				<a class="circleHolder alignCenter single_image" data-title='<h5 class="light_color">Mini description about project</h5>'  href="" target="_self" >
+					<div class="flipPanel smallCircle" >
+						<div class="circle front service_icon4_w" ></div>
+						<div class="circle back service_icon4_w_back" ></div>
+					</div>
+					<span class="description">
+						<h4>Steel Diff.</h4>
+					</span>
+				</a>
+
+			</div>
+			
+			<!--
+			<div class="row">
+				<div class="circleHolder alignCenter single_image" data-title='<h5 class="light_color"></h5>' >
+					<div class="flipPanel smallCircle" >
+						<div class="circle front service_icon1_w" ></div>
+						<div class="circle back service_icon1_w_back" ></div>
+					</div>
+					<span class="description">
+						<h4>Brushless</h4>
+					</span>
+				</div>
+				<div class="circleHolder alignCenter single_image" data-title='<h5 class="light_color"></h5>' >
+					<div class="flipPanel smallCircle" >
+						<div class="circle front service_icon6_w"></div>
+						<div class="circle back service_icon6_w_back"></div>
+					</div>
+					<span class="description">
+						<h4>25 LiPo</h4>
+					</span>
+				</div>
+				<div class="circleHolder alignCenter single_image" data-title='<span class="light_color"></span>'>
+					<div class="flipPanel smallCircle" >
+						<div class="circle front service_icon3_w" ></div>
+						<div class="circle back service_icon3_w_back" ></div>
+					</div>
+					<span class="description">
+						<h4>&nbsp;&nbsp;4 X 4&nbsp;&nbsp;</h4>
+					</span>
+				</div>
+				<div class="circleHolder alignCenter single_image" data-title='<h5 class="light_color"></h5>' >
+					<div class="flipPanel smallCircle" >
+						<div class="circle front service_icon4_w" ></div>
+						<div class="circle back service_icon4_w_back" ></div>
+					</div>
+					<span class="description">
+						<h4>Steel Diff.</h4>
+					</span>
+				</div>
+			</div>
+			-->
+		</div>
+	</div>
+	
+	<!-- fresh air -->
+	<div class="contentWrapper parallax" data-src="" data-src-small="" >
+		<div class="parallaxPattern"></div>
+		<div class="container darkStyle bg_transparent" ></div>
+		
+		<!-- Page scroll down to Next page -->
+		<a class=" move_down_white move_to_portfolio" href="#!gallery"><span></span></a>
+	</div>
+	
+	<!-- Gallery Page start-->
+	<!-- Category -->
+	<div class="contentWrapper  fullWidth titleTop lightStyle filter_options" data-id="!gallery" id="gallery" >
+		<div class="container" >
+			<div class="sixteen columns">
+				<div class="mobile_spacing">
+					<span class="title_text" >GALLERY</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- gallery Title text -->
+	<div class="contentWrapper fullWidth darkStyle">
+		<div class="container contentSpacing" >
+			<div class="row textAlignCenter" >
+				<div class="separator_mini"></div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- gallery Thumbnail/detail content -->
+	<div class="contentWrapper fullWidth darkStyle portfolioPage" style="padding:0px;">
+		<div class="container">
+			<div style="font-family: 'bebas_neueregular',Arial,Helvetica,sans-serif; font-size:20px; font-weight:bold;">Videos</div>
+			<div id="gallery_isotope_1" class="isotope_items clearfix isotope_spacing darkStyle" >
+				<div class="item photo" style="width:96%;" >
+					<div class="mobile_spacing">
+						<div class="addVideo video_content  " id="video" data-url="http://www.youtube.com/watch?v=w8uf-81AS1M">
+							<div class="video_hover" style="z-index: 5; opacity: 1;"></div>
+							<img class="scale-with-grid lazyload" src="images/gallery/video.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container" >
+			<div style="font-family: 'bebas_neueregular',Arial,Helvetica,sans-serif; font-size:20px; font-weight:bold;">Photos</div>			<div id="gallery_isotope_1" class="isotope_items clearfix isotope_spacing darkStyle" >
+				<!-- First row -->
+				<div class="item photo" >
+					<a data-toggle="modal" data-target="#myModal1">
+					  <img src="images/gallery/thumb1_s.jpg" />
+					</a>
+				</div>
+				<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+					<div class="modal-content">
+					  <div class="modal-body">
+						<img class="lazyload" src="images/gallery/thumb1.jpg" />
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				
+				<div class="item photo" >
+					<a data-toggle="modal" data-target="#myModal2">
+					  <img src="images/gallery/thumb2_s.jpg" />
+					</a>
+				</div>
+				<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+					<div class="modal-content">
+					  <div class="modal-body">
+						<img class="lazyload" src="images/gallery/thumb2.jpg" />
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				
+				<div class="item photo" >
+					<a data-toggle="modal" data-target="#myModal3">
+					  <img src="images/gallery/thumb3_s.jpg" />
+					</a>
+				</div>
+				<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+					<div class="modal-content">
+					  <div class="modal-body">
+						<img class="lazyload" src="images/gallery/thumb3.jpg" />
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				
+				<div class="item photo" >
+					<a data-toggle="modal" data-target="#myModal4">
+					  <img src="images/gallery/thumb4_s.jpg" />
+					</a>
+				</div>
+				<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+					<div class="modal-content">
+					  <div class="modal-body">
+						<img class="lazyload" class="lazyload" src="images/gallery/thumb4.jpg" />
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				
+				<!-- Second Row -->
+				<div class="item photo" >
+					<a data-toggle="modal" data-target="#myModal5">
+					  <img class="lazyload" src="images/gallery/thumb5_s.jpg" />
+					</a>
+				</div>
+				<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+					<div class="modal-content">
+					  <div class="modal-body">
+						<img class="lazyload" src="images/gallery/thumb5.jpg" />
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				
+				<div class="item photo" >
+					<a data-toggle="modal" data-target="#myModal6">
+					  <img class="lazyload" src="images/gallery/thumb6_s.jpg" />
+					</a>
+				</div>
+				<div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+					<div class="modal-content">
+					  <div class="modal-body">
+						<img class="lazyload" src="images/gallery/thumb6.jpg" />
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				
+				<div class="item photo" >
+					<a data-toggle="modal" data-target="#myModal7">
+					  <img class="lazyload" src="images/gallery/thumb7_s.jpg" />
+					</a>
+				</div>
+				<div class="modal fade" id="myModal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+					<div class="modal-content">
+					  <div class="modal-body">
+						<img class="lazyload" src="images/gallery/thumb7.jpg" />
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				
+				<div class="item photo" >
+					<a data-toggle="modal" data-target="#myModal8">
+					  <img class="lazyload" src="images/gallery/thumb8_s.jpg" />
+					</a>
+				</div>
+				<div class="modal fade" id="myModal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+					<div class="modal-content">
+					  <div class="modal-body">
+						<img class="lazyload" src="images/gallery/thumb8.jpg" />
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				
+				<!-- Third Row -->
+				<div class="item photo" >
+					<a data-toggle="modal" data-target="#myModal9">
+					  <img class="lazyload" src="images/gallery/thumb9_s.jpg" />
+					</a>
+				</div>
+				<div class="modal fade" id="myModal9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+					<div class="modal-content">
+					  <div class="modal-body">
+						<img class="lazyload" src="images/gallery/thumb9.jpg" />
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				
+				<div class="item photo" >
+					<a data-toggle="modal" data-target="#myModal10">
+					  <img class="lazyload" src="images/gallery/thumb10_s.jpg" />
+					</a>
+				</div>
+				<div class="modal fade" id="myModal10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+					<div class="modal-content">
+					  <div class="modal-body">
+						<img class="lazyload" src="images/gallery/thumb10.jpg" />
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				
+				<div class="item photo" >
+					<a data-toggle="modal" data-target="#myModal11">
+					  <img class="lazyload" src="images/gallery/thumb11_s.jpg" />
+					</a>
+				</div>
+				<div class="modal fade" id="myModal11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+					<div class="modal-content">
+					  <div class="modal-body">
+						<img class="lazyload" src="images/gallery/thumb11.jpg" />
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				
+				<div class="item photo" >
+					<a data-toggle="modal" data-target="#myModal12">
+					  <img class="lazyload" src="images/gallery/thumb12_s.jpg" />
+					</a>
+				</div>
+				<div class="modal fade" id="myModal12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+					<div class="modal-content">
+					  <div class="modal-body">
+						<img class="lazyload" src="images/gallery/thumb12.jpg" />
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			</div>
+			
+			<br/><br/><br/><br/><br/><br/>
+		</div>
+		
+		<!-- Project detail content -->
+		<div class="fullDetails" >
+			<div class="sixteen columns">
+				<h3 >Project title 4</h3>
+				<div class="separator_mini"></div>
+			</div>
+			<div class="sixteen columns" >
+				<div class="mobile_spacing">
+					<!-- project image slide show -->
+					<div class="flexSlideshow fixedHeight" >
+						<ul class="slides">
+							<li><a  class="lazyload" href="images/gallery/image1.jpg" title="Some text">image</a></li><li><a  class="lazyload" href="images/gallery/image1_a.jpg" title="Some text">image</a></li>	
+							<li><a  class="lazyload" href="images/gallery/image1_b.jpg" title="Some text">image</a></li><li><a  class="lazyload" href="images/gallery/image1_c.jpg" title="Some text">image</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+<!-- missing div -->	
+	<!-- Page scroll down to Next page -->
+	<a class="move_down_white move_to_contactus" href="#!contactus" ><span></span></a>
+<!-- missing div -->
+<!-- missing div -->
+
+	<!-- Contact us -->
+	<div class="contentWrapper contactPage" data-id="!contactus" id="contactus" >
+		<div class="fullWidth titleTop lightStyle" >
+			<div class="container" >
+				<div class="sixteen columns">
+					<span class="title_text" >Contact Us</span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="fullWidth parallax removePadding" data-src="" data-src-small="" >
+			<div class="overlayPattern" ></div>
+			<div class="container contactUsPg" >
+				<hr><hr>
+				<div class="one columns alpha" >
+					<div class="separator_mini"></div>
+				</div>
+				<div class=" fourteen columns alpha darkStyle ">
+					<hr><hr>
+					<!-- Place you Address here -->
+					<div class="six columns alpha textAlignRight" >
+						<div class="mobile_spacing">
+							<p>
+								Have any questions, feedback or suggestions?<br/><br/>
+								Drop us a line using the contact form. <br/>
+								We'd love to hear from you!<br/><br/>
+							</p>
+							<div class="separator_mini"></div>
+						</div>
+					</div>
+					<div class="one columns alpha" >
+						<div class="separator_mini"> </div>
+					</div>
+					<div id="contact" class="seven columns alpha" >
+						<div class="mobile_spacing">
+							<form name="contact" method="post" >
+								<input type="text" value="Name" id="name" name="name" onfocus="if(this.value == 'Name') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Name';}" />
+								<input type="text" value="Email" id="email" name="email" onfocus="if(this.value == 'Email') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Email';}" />
+								<hr>
+								<textarea cols="30" rows="5" id="comments" name="comments" onfocus="if(this.value == 'Comments...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Comments...';}">Comments...</textarea>
+								<br/>
+								Are you human ?<br />
+								<span id="BotBootCaptcha"></span>
+								<input type="text" value="Captcha" id="BotBootInput" name="BotBootInput" onfocus="if(this.value == 'Captcha') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Captcha';}" />
+								<!--missing p-->
+								<button type="submit" id="email_submit"  class="button alignLeft">SEND</button>
+								<div id="reply_message" ></div>
+							</form>
+						</div>
+					</div>
+					<hr>
+				</div>
+			</div>
+			<div class="footer_fit"> </div>
+			<div class="footer" >
+				<div class="footer_container darkStyle bg_transparent" >
+					<a href="#!home" class="move_up" ><span></span></a>
+					<div class="separator_mini"></div>
+					<!-- Place your copyright text -->
+					<h6 class="bottomText">Copyright © 2013 Basher</h6>
+					<div class="footer_social"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Included javascript files ================================================== -->
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+
+    <!--[if !IE]><!-->
+	<script src="js/ios6-timers.js"></script>
+	<!--<![endif]-->
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="js/supersized.3.2.7.js"></script>
+	<script type="text/javascript" src="js/supersized.shutter.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox-1.3.4.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.js" ></script>
+	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="js/portfolio.detail.js"></script>
+	<script type="text/javascript" src="js/main-fm.js"></script>
+	<script type="text/javascript" src="js/modal.js"></script>
+	
+	<script type="text/javascript">
+	/* SCRIPT FOR FEATURE */
+	var lineWidth = "0";
+	var marLeft = "0";
+	var orig_marleft = "0";
+	function altSlider(item,direct,mouse) {
+		if (item == 1) {
+			lineWidth = "460px";
+		} else if (item == 2) {
+			lineWidth = "345px";
+			marLeft = "178px";
+			orig_marleft = "520px";
+		} else if (item == 3) {
+			lineWidth = "332px";
+		} else if (item == 4) {
+			lineWidth = "340px";
+		} else if (item == 5) {
+			lineWidth = "440px";
+			marLeft = "205px";
+			orig_marleft = "643px";
+		}
+		
+		if (direct == "r") {
+			if(mouse == "out") {
+				$(".fea_text" + item).slideUp("fast");
+				$(".lines").animate({width:'0px'});
+				$('.lines_l').animate({width: '0px', marginLeft: orig_marleft});
+			} else {
+				$(".line" + item).animate({width: lineWidth});	
+				$(".fea_text" + item).delay("slow").slideDown("fast");
+			}
+		}
+		if (direct == "l") {
+			if(mouse == "out") {
+				$(".fea_text" + item).slideUp("fast");
+				$(".lines").animate({width:'0px'});
+				$('.lines_l').animate({width: '0px'});
+				$('.lines_l').animate({marginLeft: orig_marleft});
+			} else {
+				$('.line' + item).animate({width: lineWidth, marginLeft: marLeft});
+				$(".fea_text" + item).delay("slow").slideDown("fast");
+			}
+		}
+	}	
+	/* END SCRIPT FOR FEATURE */
+	
+	
+	jQuery(function($){		$.supersized({		// Functionality		slideshow               :   1,      // Slideshow on/off		autoplay        : 1,      // Slideshow starts playing automatically		start_slide             :   1,      // Start slide (0 is random)
+		stop_loop       : 0,      // Pauses slideshow on last slide		random          :   0,      // Randomize slide order (Ignores start slide)		slide_interval          :   3000,   // Length between transitions		transition              :   8,      // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left		transition_speed    : 1000,   // Speed of transition		new_window        : 1,      // Image links open in new window/tab		pause_hover             :   0,      // Pause slideshow on hover		keyboard_nav            :   1,      // Keyboard navigation on/off
+		performance       : 1,      // 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
+		image_protect     : 1,      // Disables image dragging and right click with Javascript
+		// Size & Position
+		min_width           :   0,      // Min width allowed (in pixels)
+		min_height            :   0,      // Min height allowed (in pixels)
+		vertical_center         :   1,      // Vertically center background
+		horizontal_center       :   1,      // Horizontally center background
+		fit_always        : 0,      // Image will never exceed browser width or height (Ignores min. dimensions)
+		fit_portrait          :   0,      // Portrait images will not exceed browser height
+		fit_landscape     :   0,      // Landscape images will not exceed browser width
+		// Components
+		slide_links       : 'blank',  // Individual links for each slide (Options: false, 'num', 'name', 'blank')
+		thumb_links       : 1,      // Individual thumb links for each slide
+		thumbnail_navigation    :   0,      // Thumbnail navigation
+		slides          :   [     // Slideshow Images, image_small attribute is used to load the mobile version image, main_title attribute is used to add the image tile div
+							{image : 'images/home_slider/image1.jpg', image_small : 'images/home_slider/image1_s.jpg', main_title : ".home_slider_title1"},
+							{image : 'images/home_slider/image2.jpg', image_small : 'images/home_slider/image2_s.jpg', main_title : ".home_slider_title2"},
+							{image : 'images/home_slider/image3.jpg', image_small : 'images/home_slider/image3_s.jpg', main_title : ".home_slider_title3"},
+							{image : 'images/home_slider/image4.jpg', image_small : 'images/home_slider/image4_s.jpg', main_title : ".home_slider_title4"}
+							],
+		// Theme Options		progress_bar      : 1,      // Timer for each slide
+		mouse_scrub       : 0
+	  });
+	});
+
+	/* Site Main plug-in initilize */
+	$(document).ready(function(){
+		$(".dot1 img").hover(function(){ altSlider(1,'r','in') }); 
+		$(".dot1 img").mouseout(function(){ altSlider(1,'r','out') }); 
+		
+		$(".dot2 img").hover(function(){ altSlider(2,'l','in') }); 
+		$(".dot2 img").mouseout(function(){ altSlider(2,'l','out') }); 
+		
+		$(".dot3 img").hover(function(){ altSlider(3,'r','in') }); 
+		$(".dot3 img").mouseout(function(){ altSlider(3,'r','out') });
+		
+		$(".dot4 img").hover(function(){ altSlider(4,'r','in') }); 
+		$(".dot4 img").mouseout(function(){ altSlider(4,'r','out') });
+		
+		$(".dot5 img").hover(function(){ altSlider(5,'l','in') }); 
+		$(".dot5 img").mouseout(function(){ altSlider(5,'l','out') });
+	
+		jQuery('#navHolder .last').height(18).html('<img src="images/buynow.png" alt="Buy Now on Hobbyking website" style="margin-top: -44px;margin-bottom: -26px;">');
+		
+		// init captcha
+		window.BotBootInputa = Math.ceil(Math.random() * 10);
+		window.BotBootInputb = Math.ceil(Math.random() * 10);
+		window.BotBootInputc = BotBootInputa + BotBootInputb;
+		console.log(window.BotBootInputc);
+		jQuery('#BotBootCaptcha').text("What is "+ window.BotBootInputa + " + " + window.BotBootInputb +"? ");
+		
+		jQuery(function($){
+			$("body").mainFm({
+				/* Set the opening page. leave it blank value if you need to show the home page as a opening page*/
+				currentPage : "!home",
+				/* FlexSlider slideshow speed */
+				slideshowSpeed : 5000
+			});
+		});
+		$('.parallax').each(function(){
+			$(this).parallax("50%", 0.4, true);
+		});
+		
+		/* Initialize  - isotope gallery */
+		$(function(){
+			var $container = $('#gallery_isotope_1');
+			var $optionSets = $('#options .option-set'),
+			$optionLinks = $optionSets.find('a');
+			
+			$optionLinks.click(function(){
+			var $this = $(this);
+			
+			// don't proceed if already selected
+			if ( $this.hasClass('selected') ) {
+				return false;
+			}
+			var $optionSet = $this.parents('.option-set');
+			$optionSet.find('.selected').removeClass('selected');
+			$this.addClass('selected');
+			
+			// make option object dynamically, i.e. { filter: '.my-filter-class' }
+			var options = {},
+			key = $optionSet.attr('data-option-key'),
+			value = $this.attr('data-option-value');
+			
+			// parse 'false' as false boolean
+			value = value === 'false' ? false : value;
+			options[ key ] = value;
+			
+			if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+				// changes in layout modes need extra logic
+				changeLayoutMode( $this, options )
+			} else {
+				// otherwise, apply new options
+				$container.isotope( options );
+			}
+			return false;
+			});
+		});
+		
+		// gallery isotope gallery initailize
+		$('#gallery_isotope_1').isotope({
+			itemSelector : '.item', layoutMode : 'fitRows'
+		});
+		
+		// gallery isotope gallery categories Filter initialize
+		jQuery(function($){
+			$('.portfolioPage').detailPage({
+				filter : ".filter_options",
+				buttonColor : "white_arrow"
+			})
+		});
+		
+		// Email submit action
+		$("#email_submit").click(function() {
+			$('#reply_message').removeClass();
+			$('#reply_message').html('')
+			var regEx = "";
+			
+			// validate Name
+			var name = $("input#name").val();
+			regEx=/^[A-Za-z .'-]+$/;
+			if (name == "" || name == "Name"  || !regEx.test(name)) {
+				$("input#name").val('');
+				$("input#name").focus();
+				return false;
+			}
+			
+			// validate Email
+			var email = $("input#email").val();
+			regEx=/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+			if (email == "" || email == "Email" || !regEx.test(email)) {
+				$("input#email").val('');
+				$("input#email").focus();
+				return false;
+			}
+			
+			// validate comment
+			var comments = $("textarea#comments").val();
+			if (comments == "" || comments == "Comments..." || comments.length < 2) {
+				$("textarea#comments").val('');
+				$("textarea#comments").focus();
+				return false;
+			}
+			
+			// validate Captcha
+			var captcha = parseInt($("input#BotBootInput").val(),10);
+			if (captcha == "" || captcha == "Captcha"  || captcha !== window.BotBootInputc) {
+				$("input#BotBootInput").val('');
+				$("input#BotBootInput").focus();
+				return false;
+			}
+			
+			var dataString = 'name='+ $("input#name").val() + '&email=' + $("input#email").val() + '&comments=' + $("textarea#comments").val();
+			$('#reply_message').addClass('email_loading');
+			
+			// Send form data to mailer.php
+			$.ajax({
+				type: "POST",
+				url: "mailer.php",
+				data: dataString,
+				success: function() {
+					$('#reply_message').removeClass('email_loading');
+					$('#reply_message').addClass('list3');
+					$('#reply_message').html("Mail sent sucessfully")
+					.hide()
+					.fadeIn(1500);
+				}
+			});
+			return false;
+		});
+	});
+	</script>
+</body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49604685-1', 'basher.com');
+  ga('send', 'pageview');
+
+</script>
+</html>

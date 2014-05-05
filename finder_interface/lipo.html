@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.css">
+	<link rel="stylesheet" href="css/lipo-style.css">	
+</head>
+
+<body>	
+	<div class="contain">
+		<div class="top_finder">
+			<div class="styled_select">
+				<select>
+					<option selected>International warehouse</option>
+					<option>B warehouse</option>
+					<option>C warehouse</option>
+				</select>
+			</div>
+		</div>
+		
+		
+		<div class="mid_sec">		
+			<table class="content" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="50%">
+						<form class="cap6000" >
+							<div style="float:right; width:60px; font-size:13px; font-weight:normal;">
+								<input id="cap_plus" type="checkbox" name="cap" value="6000+">&nbsp;6000+
+							</div>
+						</form>
+						<div class="title">Capacity(mAh)</div>
+						<div class="bar"><div id="slider"></div></div>
+						<input type="hidden" name="#" id="cap_min" value="#">
+						<label for="cap_min" id="min" value="#"></label>
+						<input type="hidden" name="#" id="cap_max" value="#">
+						<label for="cap_max" id="max" value="#"></label>
+					</td>
+					<td width="50%">
+						<div class="title">Discharge(c)</div>
+						<div class="bar"><div id="slider2"></div></div>
+						<input type="hidden" name="#" id="dis_min" value="#">
+						<label for="dis_min" id="min2" value="#"></label>
+						<input type="hidden" name="#" id="dis_max" value="#">
+						<label for="dis_max" id="max2" value="#"></label>
+					</td>
+				</tr>
+				<tr>
+					<td width="50%">
+						<div class="title">Weight(g)</div>
+						<div class="bar"><div id="slider3"></div></div>
+						<input type="hidden" name="#" id="wei_min" value="#">
+						<label for="wei_min" id="min3" value="#"></label>
+						<input type="hidden" name="#" id="wei_max" value="#">
+						<label for="wei_max" id="max3" value="#"></label>
+					</td>
+					<td width="50%">
+						<div class="title">Length-A(mm)</div>
+						<div class="bar"><div id="slider4"></div></div>
+						<input type="hidden" name="#" id="len_min" value="#">
+						<label for="len_min" id="min4" value="#"></label>
+						<input type="hidden" name="#" id="len_max" value="#">
+						<label for="len_max" id="max4" value="#"></label>
+					</td>
+				</tr>
+				<tr>
+					<td width="50%">
+						<div class="title">Height-B(mm)</div>
+						<div class="bar"><div id="slider5"></div></div>
+						<input type="hidden" name="#" id="hei_min" value="#">
+						<label for="hei_min" id="min5" value="#"></label>
+						<input type="hidden" name="#" id="hei_max" value="#">
+						<label for="hei_max" id="max5" value="#"></label>
+					</td>
+					<td width="50%">
+						<div class="title">Width-C(mm)</div>
+						<div class="bar"><div id="slider6"></div></div>
+						<input type="hidden" name="#" id="wid_min" value="#">
+						<label for="wid_min" id="min6" value="#"></label>
+						<input type="hidden" name="#" id="wid_max" value="#">
+						<label for="wid_max" id="max6" value="#"></label>
+					</td>
+				</tr>
+			</table>
+			
+			<table width="100%" border="0" cellpadding="6" cellspacing="0">
+				<tr>
+					<td width="50%">	
+						<div style="text-align:center;">
+							<img src="images/sample.png" />
+						</div>
+					</td>
+					<td width="50%" style="padding-left:11px;">
+						<div class="title">Config(s)</div>
+						<!--[if IE 7]>
+						<style>
+						.top_finder .styled_select { background-image:none; }
+						.top_finder .styled_select SELECT { width:200px; }
+						</style>
+						<!-- <![endif]-->
+						
+						<!--[if lte IE 8]>
+						<style>
+						.config { display:none; }
+						.normal_check > div { float:left; width:20px; margin-right:20px; margin-bottom:5px; }
+						</style>
+						<form class="normal_check">
+							<div>
+								<input type="checkbox" name="#" id="config1" value="1S" />
+								<label for="config1">&nbsp;1S</label>
+							</div>
+							<div>
+								<input type="checkbox" name="#" id="config2" value="2S" />
+								<label for="config2">&nbsp;2S</label>
+							</div>
+							<div>
+								<input type="checkbox" name="#" id="config3" value="3S" />
+								<label for="config3">&nbsp;3S</label>
+							</div>
+							<div>
+								<input type="checkbox" name="#" id="config4" value="4S" />
+								<label for="config4">&nbsp;4S</label>
+							</div>
+							<div>
+								<input type="checkbox" name="#" id="config5" value="5S" />
+								<label for="config5">&nbsp;5S</label>
+							</div>
+							<div>
+								<input type="checkbox" name="#" id="config6" value="6S" />
+								<label for="config6">&nbsp;6S</label>
+							</div>
+							<div>
+								<input type="checkbox" name="#" id="config7" value="7S" />
+								<label for="config7">&nbsp;7S</label>
+							</div>
+							<div>
+								<input type="checkbox" name="#" id="config8" value="8S" />
+								<label for="config8">&nbsp;8S</label>
+							</div>
+							<div>
+								<input type="checkbox" name="#" id="config9" value="9S" />
+								<label for="config9">&nbsp;9S</label>
+							</div>
+							<div>
+								<input type="checkbox" name="#" id="config10" value="10S" />
+								<label for="config10">10S</label>
+							</div>
+							<div>
+								<input type="checkbox" name="#" id="config11" value="11S" />
+								<label for="config11">11S</label>
+							</div>
+							<div>
+								<input type="checkbox" name="#" id="config12" value="12S" />
+								<label for="config12">12S</label>
+							</div>
+						</form>
+						<!-- <![endif]-->
+						
+						<form class="config">
+							<div class="row_first">
+								<div class="con_box">
+									<input type="checkbox" name="#" id="config1" value="1S" class="css-checkbox">
+									<label for="config1" class="css-label"></label>
+								</div>&nbsp;1S
+							</div>
+							<div>
+								<div class="con_box">
+									<input type="checkbox" name="#" id="config2" value="2S" class="css-checkbox">
+									<label for="config2" class="css-label"></label>
+								</div>&nbsp;2S
+							</div>
+							<div>
+								<div class="con_box">
+									<input type="checkbox" name="#" id="config3" value="3S" class="css-checkbox">
+									<label for="config3" class="css-label"></label>
+								</div>&nbsp;3S
+							</div>
+							<div>
+								<div class="con_box">
+									<input type="checkbox" name="#" id="config4" value="4S" class="css-checkbox">
+									<label for="config4" class="css-label"></label>
+								</div>&nbsp;4S
+							</div>
+							<div>
+								<div class="con_box">
+									<input type="checkbox" name="#" id="config5" value="5S" class="css-checkbox">
+									<label for="config5" class="css-label"></label>
+								</div>&nbsp;5S
+							</div>
+							<div class="row_last">
+								<div class="con_box">
+									<input type="checkbox" name="#" id="config6" value="6S" class="css-checkbox">
+									<label for="config6" class="css-label"></label>
+								</div>&nbsp;6S
+							</div>
+							<div class="row_first">
+								<div class="con_box">
+									<input type="checkbox" name="#" id="config7" value="7S" class="css-checkbox">
+									<label for="config7" class="css-label"></label>
+								</div>&nbsp;7S
+							</div>
+							<div>
+								<div class="con_box">
+									<input type="checkbox" name="#" id="config8" value="8S" class="css-checkbox">
+									<label for="config8" class="css-label"></label>
+								</div>&nbsp;8S
+							</div>
+							<div>
+								<div class="con_box">
+									<input type="checkbox" name="#" id="config9" value="9S" class="css-checkbox">
+									<label for="config9" class="css-label"></label>
+								</div>&nbsp;9S
+							</div>
+							<div>
+								<div class="con_box">
+									<input type="checkbox" name="#" id="config10" value="10S" class="css-checkbox">
+									<label for="config10" class="css-label"></label>
+								</div>10S
+							</div>
+							<div>
+								<div class="con_box">
+									<input type="checkbox" name="#" id="config11" value="11S" class="css-checkbox">
+									<label for="config11" class="css-label"></label>
+								</div>11S
+							</div>
+							<div class="row_last">
+								<div class="con_box">
+									<input type="checkbox" name="#" id="config12" value="12S" class="css-checkbox">
+									<label for="config12" class="css-label"></label>
+								</div>12S
+							</div>
+						</form>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+
+		<div class="bottom_ban">
+			<div class="bottom_text">Use the sliders to filter your desired results and then press search!</div>
+			<button class="orange" type="button">Search</button>
+			<button class="gray" type="button">Search</button>
+		</div>
+	</div>	
+
+	
+	<div class="com_result" >
+		<div class="com_title">Side by Side Lipo comparison</div>
+		<div style="padding:0 8px;">
+			<table width="534px" border="0" cellpadding="2" cellspacing="0" >
+				<tr>
+					<td>&nbsp;</td>
+					<td width="80">1</td>
+					<td width="80">2</td>
+					<td width="80">3</td>
+					<td width="80">4</td>
+					<td width="80">5</td>
+				</tr>
+				<tr>
+					<th>SKU</th>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Status</th>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Price</th>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Rated</th>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Capacity</th>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Config</th>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Discharge</th>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Weight</th>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Max Charge Rate</th>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Length (A)</th>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Height (B)</th>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Width (C)</th>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	
+	<table class="result" width="550px" border="0" cellpadding="10" cellspacing="0" >
+		<tr>
+			<td>
+				<table width="550px" class="display" border="0" cellpadding="0" cellspacing="0">
+					<tr height="22" valign="top">
+						<th width="110">Compare</th>
+						<th>Description</th>
+						<th width="70">Capacity</th>
+						<th width="60">C-Rate</th>
+						<th width="60">Weight</th>
+						<th width="55">Stock</th>
+					</tr>
+					<tr>
+						<td class="compare">
+							<div>1</div>
+							<div>2</div>
+							<div>3</div>
+							<div>4</div>
+							<div>5</div>
+						</td>
+						<td>Turnigy 160mAh 1S 30C</td>
+						<td>2400</td>
+						<td>0</td>
+						<td>29g</td>
+						<td>OK</td>
+					</tr>
+					<tr>
+						<td class="compare">
+							<div>1</div>
+							<div>2</div>
+							<div>3</div>
+							<div>4</div>
+							<div>5</div>
+						</td>
+						<td>Turnigy 160mAh 1S 30C</td>
+						<td>2400</td>
+						<td>0</td>
+						<td>29g</td>
+						<td>OK</td>
+					</tr>
+					<tr>
+						<td class="compare">
+							<div>1</div>
+							<div>2</div>
+							<div>3</div>
+							<div>4</div>
+							<div>5</div>
+						</td>
+						<td>Turnigy 160mAh 1S 30C</td>
+						<td>2400</td>
+						<td>0</td>
+						<td>29g</td>
+						<td>OK</td>
+					</tr>
+					<tr>
+						<td class="compare">
+							<div>1</div>
+							<div>2</div>
+							<div>3</div>
+							<div>4</div>
+							<div>5</div>
+						</td>
+						<td>Turnigy 160mAh 1S 30C</td>
+						<td>2400</td>
+						<td>0</td>
+						<td>29g</td>
+						<td>OK</td>
+					</tr>
+					<tr>
+						<td class="compare">
+							<div>1</div>
+							<div>2</div>
+							<div>3</div>
+							<div>4</div>
+							<div>5</div>
+						</td>
+						<td>Turnigy 160mAh 1S 30C</td>
+						<td>2400</td>
+						<td>0</td>
+						<td>29g</td>
+						<td>OK</td>
+					</tr>
+					<tr>
+						<td class="compare">
+							<div>1</div>
+							<div>2</div>
+							<div>3</div>
+							<div>4</div>
+							<div>5</div>
+						</td>
+						<td>Turnigy 160mAh 1S 30C</td>
+						<td>2400</td>
+						<td>0</td>
+						<td>29g</td>
+						<td>OK</td>
+					</tr>
+					<tr>
+						<td class="compare">
+							<div>1</div>
+							<div>2</div>
+							<div>3</div>
+							<div>4</div>
+							<div>5</div>
+						</td>
+						<td>Turnigy 160mAh 1S 30C</td>
+						<td>2400</td>
+						<td>0</td>
+						<td>29g</td>
+						<td>OK</td>
+					</tr>
+					<tr>
+						<td class="compare">
+							<div>1</div>
+							<div>2</div>
+							<div>3</div>
+							<div>4</div>
+							<div>5</div>
+						</td>
+						<td>Turnigy 160mAh 1S 30C</td>
+						<td>2400</td>
+						<td>0</td>
+						<td>29g</td>
+						<td>OK</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	
+</body>
+</html>
+
+
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#slider1, #slider2, #slider3, #slider4, #slider5, #slider6, :checkbox").click(function(){
+		$(".gray").hide();
+		$(".bottom_text").css("visibility","hidden"); ;
+	});
+
+	/*code for slider bar capacity*/
+	$( "#slider" ).slider({
+		range: true,
+		min: 0,
+		max: 6000,
+		step: 10,
+		values: [0, 6000],
+		animate: 'slow',
+		create: function() {
+			$('#min').appendTo($('#slider a').get(0));
+			$('#max').appendTo($('#slider a').get(1));
+		},
+		slide: function(event, ui) { $(ui.handle).find('label').html(ui.value + 'mAh'); }
+	});
+	$('#min').html($('#slider').slider('values', 0) + 'mAh').position({
+		my: 'center top',
+		at: 'center bottom',
+		of: $('#slider a:eq(0)'),
+		offset: "0, 10"
+	});
+	$('#max').html($('#slider').slider('values', 1) + 'mAh').position({
+		my: 'center top',
+		at: 'center bottom',
+		of: $('#slider a:eq(1)'),
+		offset: "0, 10"
+	});
+	/*end code for slider bar capacity*/
+	
+	/*code for slider bar discharge*/
+	$( "#slider2" ).slider({ range: true, min: 0, max: 110, step: 1, values: [0, 110], animate: 'slow',
+		create: function() { $('#min2').appendTo($('#slider2 a').get(0)); $('#max2').appendTo($('#slider2 a').get(1)); },
+		slide: function(event, ui) { $(ui.handle).find('label').html(ui.value + 'c'); }
+	});
+	$('#min2').html($('#slider2').slider('values', 0) + 'c').position({ my: 'center top', at: 'center bottom', of: $('#slider2 a:eq(0)'),	offset: "0, 10"	});
+	$('#max2').html($('#slider2').slider('values', 1) + 'c').position({ my: 'center top', at: 'center bottom', of: $('#slider2 a:eq(1)'), offset: "0, 10" });
+	/*end code for slider bar discharge*/
+	
+	/*code for slider bar weight*/
+	$( "#slider3" ).slider({ range: true, min: 0, max: 2000, step: 1, values: [0, 2000], animate: 'slow',
+		create: function() { $('#min3').appendTo($('#slider3 a').get(0)); $('#max3').appendTo($('#slider3 a').get(1)); },
+		slide: function(event, ui) { $(ui.handle).find('label').html(ui.value + 'g'); }
+	});
+	$('#min3').html($('#slider3').slider('values', 0) + 'g').position({ my: 'center top', at: 'center bottom', of: $('#slider3 a:eq(0)'),	offset: "0, 10"	});
+	$('#max3').html($('#slider3').slider('values', 1) + 'g').position({ my: 'center top', at: 'center bottom', of: $('#slider3 a:eq(1)'), offset: "0, 10" });
+	/*end code for slider bar weight*/
+	
+	/*code for slider bar length*/
+	$( "#slider4" ).slider({ range: true, min: 0, max: 350, step: 1, values: [0, 350], animate: 'slow',
+		create: function() { $('#min4').appendTo($('#slider4 a').get(0)); $('#max4').appendTo($('#slider4 a').get(1)); },
+		slide: function(event, ui) { $(ui.handle).find('label').html(ui.value + 'mm'); }
+	});
+	$('#min4').html($('#slider4').slider('values', 0) + 'mm').position({ my: 'center top', at: 'center bottom', of: $('#slider4 a:eq(0)'),	offset: "0, 10"	});
+	$('#max4').html($('#slider4').slider('values', 1) + 'mm').position({ my: 'center top', at: 'center bottom', of: $('#slider4 a:eq(1)'), offset: "0, 10" });
+	/*end code for slider bar length*/
+	
+	/*code for slider bar height*/
+	$( "#slider5" ).slider({ range: true, min: 0, max: 350, step: 1, values: [0, 350], animate: 'slow',
+		create: function() { $('#min5').appendTo($('#slider5 a').get(0)); $('#max5').appendTo($('#slider5 a').get(1)); },
+		slide: function(event, ui) { $(ui.handle).find('label').html(ui.value + 'mm'); }
+	});
+	$('#min5').html($('#slider5').slider('values', 0) + 'mm').position({ my: 'center top', at: 'center bottom', of: $('#slider5 a:eq(0)'),	offset: "0, 10"	});
+	$('#max5').html($('#slider5').slider('values', 1) + 'mm').position({ my: 'center top', at: 'center bottom', of: $('#slider5 a:eq(1)'), offset: "0, 10" });
+	/*end code for slider bar height*/
+	
+	/*code for slider bar width*/
+	$( "#slider6" ).slider({ range: true, min: 0, max: 350, step: 1, values: [0, 350], animate: 'slow',
+		create: function() { $('#min6').appendTo($('#slider6 a').get(0)); $('#max6').appendTo($('#slider6 a').get(1)); },
+		slide: function(event, ui) { $(ui.handle).find('label').html(ui.value + 'mm'); }
+	});
+	$('#min6').html($('#slider6').slider('values', 0) + 'mm').position({ my: 'center top', at: 'center bottom', of: $('#slider6 a:eq(0)'),	offset: "0, 10"	});
+	$('#max6').html($('#slider6').slider('values', 1) + 'mm').position({ my: 'center top', at: 'center bottom', of: $('#slider6 a:eq(1)'), offset: "0, 10" });
+	/*end code for slider bar width*/
+}); 
+</script>

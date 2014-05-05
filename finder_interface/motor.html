@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.css">
+	<link rel="stylesheet" href="css/motor-style.css">	
+</head>
+
+<body>	
+	<div class="contain">
+		<div class="top_finder">
+			<div class="styled_select">
+				<select>
+					<option selected>International warehouse</option>
+					<option>B warehouse</option>
+					<option>C warehouse</option>
+				</select>
+			</div>
+		</div>
+		
+		
+		<div class="mid_sec">		
+			<table class="content" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td width="50%">
+						<form class="limit_box" >
+							<div>
+								<input type="checkbox" name="#" value="#">&nbsp;4000+
+							</div>
+						</form>
+						<div class="title">Kv(rpm/v)</div>
+						<div class="bar"><div id="slider"></div></div>
+						<input type="hidden" name="#" id="kv_min" value="#">
+						<label for="kv_min" id="min" value="#"></label>
+						<input type="hidden" name="#" id="kv_max" value="#">
+						<label for="kv_max" id="max" value="#"></label>
+					</td>
+					<td width="50%">
+						<form class="limit_box" >
+							<div>
+								<input type="checkbox" name="#" value="#">&nbsp;500+
+							</div>
+						</form>
+						<div class="title">Weight(g)</div>
+						<div class="bar"><div id="slider2"></div></div>
+						<input type="hidden" name="#" id="wei_min" value="#">
+						<label for="wei_min" id="min2" value="#"></label>
+						<input type="hidden" name="#" id="wei_max" value="#">
+						<label for="wei_max" id="max2" value="#"></label>
+					</td>
+				</tr>
+				<tr>
+					<td width="50%">
+						<form class="limit_box" >
+							<div>
+								<input type="checkbox" name="#" value="#">&nbsp;150+
+							</div>
+						</form>
+						<div class="title">Max Currents(A)</div>
+						<div class="bar"><div id="slider3"></div></div>
+						<input type="hidden" name="#" id="cur_min" value="#">
+						<label for="cur_min" id="min3" value="#"></label>
+						<input type="hidden" name="#" id="cur_max" value="#">
+						<label for="cur_max" id="max3" value="#"></label>
+					</td>
+					<td width="50%">
+						<div class="title">Max Voltage(V)</div>
+						<div class="bar"><div id="slider4"></div></div>
+						<input type="hidden" name="#" id="vol_min" value="#">
+						<label for="vol_min" id="min4" value="#"></label>
+						<input type="hidden" name="#" id="vol_max" value="#">
+						<label for="vol_max" id="max4" value="#"></label>
+					</td>
+				</tr>
+				<tr>
+					<td width="50%">
+						<form class="limit_box" >
+							<div>
+								<input type="checkbox" name="#" value="#">&nbsp;2000+
+							</div>
+						</form>
+						<div class="title">Power(W)</div>
+						<div class="bar"><div id="slider5"></div></div>
+						<input type="hidden" name="#" id="pow_min" value="#">
+						<label for="pow_min" id="min5" value="#"></label>
+						<input type="hidden" name="#" id="pow_max" value="#">
+						<label for="pow_max" id="max5" value="#"></label>
+					</td>
+					<td width="50%">
+						<div class="title">Shaft A(mm)</div>
+						<div class="bar"><div id="slider6"></div></div>
+						<input type="hidden" name="#" id="shaf_min" value="#">
+						<label for="shaf_min" id="min6" value="#"></label>
+						<input type="hidden" name="#" id="shaf_max" value="#">
+						<label for="shaf_max" id="max6" value="#"></label>
+					</td>
+				</tr>	
+				<tr>
+					<td width="50%">
+						<div class="title">Length B(mm)</div>
+						<div class="bar"><div id="slider7"></div></div>
+						<input type="hidden" name="#" id="len_min" value="#">
+						<label for="len_min" id="min7" value="#"></label>
+						<input type="hidden" name="#" id="len_max" value="#">
+						<label for="len_max" id="max7" value="#"></label>
+					</td>
+					<td width="50%">
+						<div class="title">Diameter C(mm)</div>
+						<div class="bar"><div id="slider8"></div></div>
+						<input type="hidden" name="#" id="tit_min" value="#">
+						<label for="tit_min" id="min8" value="#"></label>
+						<input type="hidden" name="#" id="tit_max" value="#">
+						<label for="tit_max" id="max8" value="#"></label>
+					</td>
+				</tr>
+				<tr>
+					<td width="50%">
+						<div class="title">Can Length D(mm)</div>
+						<div class="bar"><div id="slider9"></div></div>
+						<input type="hidden" name="#" id="can_min" value="#">
+						<label for="can_min" id="min9" value="#"></label>
+						<input type="hidden" name="#" id="can_max" value="#">
+						<label for="can_max" id="max9" value="#"></label>
+					</td>
+					<td width="50%">
+						<div class="title">Total Length E(mm)</div>
+						<div class="bar"><div id="slider10"></div></div>
+						<input type="hidden" name="#" id="total_min" value="#">
+						<label for="total_min" id="min10" value="#"></label>
+						<input type="hidden" name="#" id="total_max" value="#">
+						<label for="total_max" id="max10" value="#"></label>
+					</td>
+				</tr>
+			</table>
+			
+			<table width="100%" border="0" cellpadding="6" cellspacing="0">
+				<tr>
+					<td width="100%">	
+						<div style="text-align:center;">
+							<img src="images/motor_sample.png" />
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>		
+
+		<div class="bottom_ban">
+			<div class="bottom_text">Use the sliders to filter your desired results and then press search!</div>
+			<button class="orange" type="button">Search</button>
+			<button class="gray" type="button">Search</button>
+		</div>
+	</div>	
+	
+	
+		<div class="com_result" >
+		<div class="com_title">Side by Side Motor comparison</div>
+		<div style="padding:0 8px;">
+			<table width="534px" border="0" cellpadding="2" cellspacing="0" >
+				<tr>
+					<td>&nbsp;</td>
+					<td width="80">1</td>
+					<td width="80">2</td>
+					<td width="80">3</td>
+					<td width="80">4</td>
+					<td width="80">5</td>
+				</tr>
+				<tr>
+					<th>SKU</th>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Status</th>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Price</th>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Rated</th>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Capacity</th>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Config</th>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Discharge</th>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Weight</th>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Max Charge Rate</th>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Length (A)</th>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Height (B)</th>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+				<tr>
+					<th>Width (C)</th>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+					<td>X</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	
+	<table class="result" width="550px" border="0" cellpadding="10" cellspacing="0" >
+		<tr>
+			<td>
+				<table width="550px" class="display" border="0" cellpadding="0" cellspacing="0">
+					<tr height="22" valign="top">
+						<th width="110">Compare</th>
+						<th>Description</th>
+						<th width="70">
+							<select>
+								<option selected>Kv</option>
+								<option>Weight</option>
+								<option>Max current</option>
+								<option>Max Voltage</option>
+								<option>Power</option>
+								<option>A</option>
+								<option>B</option>
+								<option>C</option>
+								<option>D</option>
+								<option>E</option>
+							</select>
+						</th>
+						<th width="70">
+							<select>
+								<option>Kv</option>
+								<option selected>Weight</option>
+								<option>Max current</option>
+								<option>Max Voltage</option>
+								<option>Power</option>
+								<option>A</option>
+								<option>B</option>
+								<option>C</option>
+								<option>D</option>
+								<option>E</option>
+							</select>
+						</th>
+						<th width="70">
+							<select>
+								<option>Kv</option>
+								<option>Weight</option>
+								<option selected>Max current</option>
+								<option>Max Voltage</option>
+								<option>Power</option>
+								<option>A</option>
+								<option>B</option>
+								<option>C</option>
+								<option>D</option>
+								<option>E</option>
+							</select>
+						</th>
+						<th width="55">Stock</th>
+					</tr>
+					<tr>
+						<td class="compare">
+							<div>1</div>
+							<div>2</div>
+							<div>3</div>
+							<div>4</div>
+							<div>5</div>
+						</td>
+						<td>Turnigy 160mAh 1S 30C</td>
+						<td>2400</td>
+						<td>0</td>
+						<td>29g</td>
+						<td>OK</td>
+					</tr>
+					<tr>
+						<td class="compare">
+							<div>1</div>
+							<div>2</div>
+							<div>3</div>
+							<div>4</div>
+							<div>5</div>
+						</td>
+						<td>Turnigy 160mAh 1S 30C</td>
+						<td>2400</td>
+						<td>0</td>
+						<td>29g</td>
+						<td>OK</td>
+					</tr>
+					<tr>
+						<td class="compare">
+							<div>1</div>
+							<div>2</div>
+							<div>3</div>
+							<div>4</div>
+							<div>5</div>
+						</td>
+						<td>Turnigy 160mAh 1S 30C</td>
+						<td>2400</td>
+						<td>0</td>
+						<td>29g</td>
+						<td>OK</td>
+					</tr>
+					<tr>
+						<td class="compare">
+							<div>1</div>
+							<div>2</div>
+							<div>3</div>
+							<div>4</div>
+							<div>5</div>
+						</td>
+						<td>Turnigy 160mAh 1S 30C</td>
+						<td>2400</td>
+						<td>0</td>
+						<td>29g</td>
+						<td>OK</td>
+					</tr>
+					<tr>
+						<td class="compare">
+							<div>1</div>
+							<div>2</div>
+							<div>3</div>
+							<div>4</div>
+							<div>5</div>
+						</td>
+						<td>Turnigy 160mAh 1S 30C</td>
+						<td>2400</td>
+						<td>0</td>
+						<td>29g</td>
+						<td>OK</td>
+					</tr>
+					<tr>
+						<td class="compare">
+							<div>1</div>
+							<div>2</div>
+							<div>3</div>
+							<div>4</div>
+							<div>5</div>
+						</td>
+						<td>Turnigy 160mAh 1S 30C</td>
+						<td>2400</td>
+						<td>0</td>
+						<td>29g</td>
+						<td>OK</td>
+					</tr>
+					<tr>
+						<td class="compare">
+							<div>1</div>
+							<div>2</div>
+							<div>3</div>
+							<div>4</div>
+							<div>5</div>
+						</td>
+						<td>Turnigy 160mAh 1S 30C</td>
+						<td>2400</td>
+						<td>0</td>
+						<td>29g</td>
+						<td>OK</td>
+					</tr>
+					<tr>
+						<td class="compare">
+							<div>1</div>
+							<div>2</div>
+							<div>3</div>
+							<div>4</div>
+							<div>5</div>
+						</td>
+						<td>Turnigy 160mAh 1S 30C</td>
+						<td>2400</td>
+						<td>0</td>
+						<td>29g</td>
+						<td>OK</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	
+</body>
+</html>
+
+
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#slider1, #slider2, #slider3, #slider4, #slider5, #slider6, #slider7, #slider8, #slider9, #slider10, :checkbox").click(function(){
+		$(".gray").hide();
+		$(".bottom_text").css("visibility","hidden"); ;
+	});
+
+	/*code for slider bar Kv*/
+	$( "#slider" ).slider({
+		range: true,
+		min: 0,
+		max: 4000,
+		step: 1,
+		values: [0, 4000],
+		animate: 'slow',
+		create: function() {
+			$('#min').appendTo($('#slider a').get(0));
+			$('#max').appendTo($('#slider a').get(1));
+		},
+		slide: function(event, ui) { $(ui.handle).find('label').html(ui.value + 'rpm/v'); }
+	});
+	$('#min').html($('#slider').slider('values', 0) + 'rpm/v').position({
+		my: 'center top',
+		at: 'center bottom',
+		of: $('#slider a:eq(0)'),
+		offset: "0, 10"
+	});
+	$('#max').html($('#slider').slider('values', 1) + 'rpm/v').position({
+		my: 'center top',
+		at: 'center bottom',
+		of: $('#slider a:eq(1)'),
+		offset: "0, 10"
+	});
+	/*end code for slider bar Kv*/
+	
+	/*code for slider bar weight*/
+	$( "#slider2" ).slider({ range: true, min: 0, max: 500, step: 1, values: [0, 500], animate: 'slow',
+		create: function() { $('#min2').appendTo($('#slider2 a').get(0)); $('#max2').appendTo($('#slider2 a').get(1)); },
+		slide: function(event, ui) { $(ui.handle).find('label').html(ui.value + 'g'); }
+	});
+	$('#min2').html($('#slider2').slider('values', 0) + 'g').position({ my: 'center top', at: 'center bottom', of: $('#slider2 a:eq(0)'),	offset: "0, 10"	});
+	$('#max2').html($('#slider2').slider('values', 1) + 'g').position({ my: 'center top', at: 'center bottom', of: $('#slider2 a:eq(1)'), offset: "0, 10" });
+	/*end code for slider bar weight*/
+	
+	/*code for slider bar max current*/
+	$( "#slider3" ).slider({ range: true, min: 0, max: 150, step: 1, values: [0, 150], animate: 'slow',
+		create: function() { $('#min3').appendTo($('#slider3 a').get(0)); $('#max3').appendTo($('#slider3 a').get(1)); },
+		slide: function(event, ui) { $(ui.handle).find('label').html(ui.value + 'A'); }
+	});
+	$('#min3').html($('#slider3').slider('values', 0) + 'A').position({ my: 'center top', at: 'center bottom', of: $('#slider3 a:eq(0)'),	offset: "0, 10"	});
+	$('#max3').html($('#slider3').slider('values', 1) + 'A').position({ my: 'center top', at: 'center bottom', of: $('#slider3 a:eq(1)'), offset: "0, 10" });
+	/*end code for slider bar max current*/
+	
+	/*code for slider bar max voltage*/
+	$( "#slider4" ).slider({ range: true, min: 0, max: 80, step: 1, values: [0, 80], animate: 'slow',
+		create: function() { $('#min4').appendTo($('#slider4 a').get(0)); $('#max4').appendTo($('#slider4 a').get(1)); },
+		slide: function(event, ui) { $(ui.handle).find('label').html(ui.value + 'V'); }
+	});
+	$('#min4').html($('#slider4').slider('values', 0) + 'V').position({ my: 'center top', at: 'center bottom', of: $('#slider4 a:eq(0)'),	offset: "0, 10"	});
+	$('#max4').html($('#slider4').slider('values', 1) + 'V').position({ my: 'center top', at: 'center bottom', of: $('#slider4 a:eq(1)'), offset: "0, 10" });
+	/*end code for slider bar max voltage*/
+	
+	/*code for slider bar power*/
+	$( "#slider5" ).slider({ range: true, min: 0, max: 2000, step: 1, values: [0, 2000], animate: 'slow',
+		create: function() { $('#min5').appendTo($('#slider5 a').get(0)); $('#max5').appendTo($('#slider5 a').get(1)); },
+		slide: function(event, ui) { $(ui.handle).find('label').html(ui.value + 'W'); }
+	});
+	$('#min5').html($('#slider5').slider('values', 0) + 'W').position({ my: 'center top', at: 'center bottom', of: $('#slider5 a:eq(0)'),	offset: "0, 10"	});
+	$('#max5').html($('#slider5').slider('values', 1) + 'W').position({ my: 'center top', at: 'center bottom', of: $('#slider5 a:eq(1)'), offset: "0, 10" });
+	/*end code for slider bar power*/
+	
+	/*code for slider bar shaft*/
+	$( "#slider6" ).slider({ range: true, min: 0, max: 20, step: 1, values: [0, 20], animate: 'slow',
+		create: function() { $('#min6').appendTo($('#slider6 a').get(0)); $('#max6').appendTo($('#slider6 a').get(1)); },
+		slide: function(event, ui) { $(ui.handle).find('label').html(ui.value + 'mm'); }
+	});
+	$('#min6').html($('#slider6').slider('values', 0) + 'mm').position({ my: 'center top', at: 'center bottom', of: $('#slider6 a:eq(0)'),	offset: "0, 10"	});
+	$('#max6').html($('#slider6').slider('values', 1) + 'mm').position({ my: 'center top', at: 'center bottom', of: $('#slider6 a:eq(1)'), offset: "0, 10" });
+	/*end code for slider bar shaft*/
+	
+	/*code for slider bar length*/
+	$( "#slider7" ).slider({ range: true, min: 0, max: 150, step: 1, values: [0, 150], animate: 'slow',
+		create: function() { $('#min7').appendTo($('#slider7 a').get(0)); $('#max7').appendTo($('#slider7 a').get(1)); },
+		slide: function(event, ui) { $(ui.handle).find('label').html(ui.value + 'mm'); }
+	});
+	$('#min7').html($('#slider7').slider('values', 0) + 'mm').position({ my: 'center top', at: 'center bottom', of: $('#slider7 a:eq(0)'),	offset: "0, 10"	});
+	$('#max7').html($('#slider7').slider('values', 1) + 'mm').position({ my: 'center top', at: 'center bottom', of: $('#slider7 a:eq(1)'), offset: "0, 10" });
+	/*end code for slider bar length*/
+	
+	/*code for slider bar diameter*/
+	$( "#slider8" ).slider({ range: true, min: 0, max: 120, step: 1, values: [0, 120], animate: 'slow',
+		create: function() { $('#min8').appendTo($('#slider8 a').get(0)); $('#max8').appendTo($('#slider8 a').get(1)); },
+		slide: function(event, ui) { $(ui.handle).find('label').html(ui.value + 'mm'); }
+	});
+	$('#min8').html($('#slider8').slider('values', 0) + 'mm').position({ my: 'center top', at: 'center bottom', of: $('#slider8 a:eq(0)'),	offset: "0, 10"	});
+	$('#max8').html($('#slider8').slider('values', 1) + 'mm').position({ my: 'center top', at: 'center bottom', of: $('#slider8 a:eq(1)'), offset: "0, 10" });
+	/*end code for slider bar diameter*/
+	
+	/*code for slider bar length*/
+	$( "#slider9" ).slider({ range: true, min: 0, max: 100, step: 1, values: [0, 100], animate: 'slow',
+		create: function() { $('#min9').appendTo($('#slider9 a').get(0)); $('#max9').appendTo($('#slider9 a').get(1)); },
+		slide: function(event, ui) { $(ui.handle).find('label').html(ui.value + 'mm'); }
+	});
+	$('#min9').html($('#slider9').slider('values', 0) + 'mm').position({ my: 'center top', at: 'center bottom', of: $('#slider9 a:eq(0)'),	offset: "0, 10"	});
+	$('#max9').html($('#slider9').slider('values', 1) + 'mm').position({ my: 'center top', at: 'center bottom', of: $('#slider9 a:eq(1)'), offset: "0, 10" });
+	/*end code for slider bar length*/
+	
+	/*code for slider bar total length*/
+	$( "#slider10" ).slider({ range: true, min: 0, max: 250, step: 1, values: [0, 250], animate: 'slow',
+		create: function() { $('#min10').appendTo($('#slider10 a').get(0)); $('#max10').appendTo($('#slider10 a').get(1)); },
+		slide: function(event, ui) { $(ui.handle).find('label').html(ui.value + 'mm'); }
+	});
+	$('#min10').html($('#slider10').slider('values', 0) + 'mm').position({ my: 'center top', at: 'center bottom', of: $('#slider10 a:eq(0)'),	offset: "0, 10"	});
+	$('#max10').html($('#slider10').slider('values', 1) + 'mm').position({ my: 'center top', at: 'center bottom', of: $('#slider10 a:eq(1)'), offset: "0, 10" });
+	/*end code for slider bar total length*/
+}); 
+</script>

@@ -1,0 +1,42 @@
+#/* PREVENT VIEWING OF .HTACCESS
+#***********************************************/
+<Files .htaccess>
+ order allow,deny
+ deny from all
+</Files>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+##########
+# BASHER #
+##########
+
+# ACCESS TO basher.com
+# -------------------------------------------------------------
+RewriteCond %{HTTP_HOST} ^basher\.com [NC]
+RewriteRule ^(.*)$ http://www.basher.com/$1 [R=301,L]
+
+# ACCESS TO dev.basher.com
+# -------------------------------------------------------------
+RewriteCond %{HTTP_HOST} ^dev\.basher\.com [NC]
+RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1$
+RewriteCond %{REMOTE_ADDR} !^113\.28\.151\.222$
+RewriteRule ^(.*)$ http://www.basher.com/$1 [R=301,L]
+
+# ACCESS TO www.basher.com
+# -------------------------------------------------------------
+RewriteCond %{HTTP_HOST} ^www\.basher\.com [NC]
+RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1$
+RewriteCond %{REMOTE_ADDR} !^113\.28\.151\.222$
+RewriteRule ^(.*)$ http://www.hobbyking.com/$1 [R=301,L]
+
+RewriteRule ^index\.html$ - [L]
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+RewriteRule ^(.*\.html)$ $1 [L]
+RewriteRule . index.html [L]
+</IfModule>
