@@ -68,15 +68,15 @@
 									<!-- Slides Container -->
 									<div u="slides" style="cursor: move; position: absolute; left: 280px; top: 0px; width: 640px; height: 426px; overflow: hidden;">
 										<div>
-											<img u="image" src="images/product/gpslogger/1.png" />
+											<img u="image" src2="images/product/gpslogger/1.png" />
 											<img u="thumb" src="images/product/gpslogger/1s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/gpslogger/2.png" />
+											<img u="image" src2="images/product/gpslogger/2.png" />
 											<img u="thumb" src="images/product/gpslogger/2s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/gpslogger/3.png" />
+											<img u="image" src2="images/product/gpslogger/3.png" />
 											<img u="thumb" src="images/product/gpslogger/3s.png" />
 										</div>
 									</div>
@@ -106,12 +106,12 @@
 								</div>
 								<!-- Jssor Slider End -->
 								<img width=0 height=0 />
+								<?php 
+									$video = "null";
+									include 'video.php'; 
+								?>
 							</div>	
-
-							<?php 
-								$video = "null";
-								include 'video.php'; 
-							?>
+							
 
 							<div class="col-md-16 col-lg-16">
 								<div class="panel-group" id="accordion">

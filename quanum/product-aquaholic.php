@@ -68,55 +68,55 @@
 									<!-- Slides Container -->
 									<div u="slides" style="cursor: move; position: absolute; left: 280px; top: 0px; width: 640px; height: 426px; overflow: hidden;">
 										<div>
-											<img u="image" src="images/product/aquaholic/1.png" />
+											<img u="image" src2="images/product/aquaholic/1.png" />
 											<img u="thumb" src="images/product/aquaholic/1s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/aquaholic/2.png" />
+											<img u="image" src2="images/product/aquaholic/2.png" />
 											<img u="thumb" src="images/product/aquaholic/2s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/aquaholic/3.png" />
+											<img u="image" src2="images/product/aquaholic/3.png" />
 											<img u="thumb" src="images/product/aquaholic/3s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/aquaholic/4.png" />
+											<img u="image" src2="images/product/aquaholic/4.png" />
 											<img u="thumb" src="images/product/aquaholic/4s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/aquaholic/5.png" />
+											<img u="image" src2="images/product/aquaholic/5.png" />
 											<img u="thumb" src="images/product/aquaholic/5s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/aquaholic/6.png" />
+											<img u="image" src2="images/product/aquaholic/6.png" />
 											<img u="thumb" src="images/product/aquaholic/6s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/aquaholic/7.png" />
+											<img u="image" src2="images/product/aquaholic/7.png" />
 											<img u="thumb" src="images/product/aquaholic/7s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/aquaholic/8.png" />
+											<img u="image" src2="images/product/aquaholic/8.png" />
 											<img u="thumb" src="images/product/aquaholic/8s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/aquaholic/9.png" />
+											<img u="image" src2="images/product/aquaholic/9.png" />
 											<img u="thumb" src="images/product/aquaholic/9s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/aquaholic/10.png" />
+											<img u="image" src2="images/product/aquaholic/10.png" />
 											<img u="thumb" src="images/product/aquaholic/10s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/aquaholic/11.png" />
+											<img u="image" src2="images/product/aquaholic/11.png" />
 											<img u="thumb" src="images/product/aquaholic/11s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/aquaholic/12.png" />
+											<img u="image" src2="images/product/aquaholic/12.png" />
 											<img u="thumb" src="images/product/aquaholic/12s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/aquaholic/13.png" />
+											<img u="image" src2="images/product/aquaholic/13.png" />
 											<img u="thumb" src="images/product/aquaholic/13s.png" />
 										</div>
 									</div>
@@ -146,12 +146,12 @@
 								</div>
 								<!-- Jssor Slider End -->
 								<img width=0 height=0 />
-							</div>	
 
-							<?php 
-								$youtube_path =  "tt-jdNLJaLw";
-								include 'video.php'; 
-							?>
+								<?php 
+									$youtube_path =  "tt-jdNLJaLw";
+									include 'video.php'; 
+								?>
+							</div>								
 
 							<div class="col-md-16 col-lg-16">
 								<div class="panel-group" id="accordion">

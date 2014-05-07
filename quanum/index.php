@@ -172,7 +172,7 @@ if (($IE6 == 1) || ($IE7 == 1)) {
 					<div class="col-xs-8 col-sm-4">								
 						<a href="product-toxic.php">
 							<div class="live-tile tile_marleft" data-direction="horizontal" data-mode="flip" data-delay="4000">           
-								<div class="tile_back" style="background-color:#343434;">Toxic</div>
+								<div style="background-color:#343434;">Toxic</div>
 								<div><img src="images/index/tile6.png" /></div>
 							</div>
 						</a>
@@ -207,7 +207,7 @@ if (($IE6 == 1) || ($IE7 == 1)) {
 
 <?php include 'foot.php'; ?>
 <!-- script for tile -->
-<script src="js/tile_plugin/MetroJs.lta.js"></script>
+<script src="js/tile_plugin/MetroJs.lta.min.js"></script>
 <!-- end script for tile -->
 
 <script>

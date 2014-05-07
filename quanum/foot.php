@@ -1,5 +1,5 @@
 <?php if ($page != 'contact') { ?>
-	<script src="js/bootstrap_plugin/bootstrap.js"></script>
+	<script src="js/bootstrap_plugin/bootstrap.min.js"></script>
 <?php } ?>
 
 <!-- script for ie compatible -->
@@ -9,14 +9,12 @@
 <!-- end scripts for ie compatible -->
 
 <!-- script for menu -->
-<script src="js/menu_plugin/classie.js"></script>
-<script src="js/menu_plugin/sidebarEffects.js"></script>
+<script src="js/menu_plugin/classie.js" async></script>
+<script src="js/menu_plugin/sidebarEffects.js" async></script>
 <!-- end script for menu -->
 
 <!-- fancy box -->
 <script type="text/javascript" src="js/fancybox_plugin/jquery.fancybox.pack.js"></script>
-<!-- end fancy box -->
-
 <script type="text/javascript">
 $('a.video_pop').on('click', function(event) {
     event.preventDefault();
@@ -32,7 +30,13 @@ $('a.video_pop').on('click', function(event) {
         'height' : 480
     });
 });
+</script>
+<!-- end fancy box -->
 
+
+
+
+<script type="text/javascript">
 $(document).ready(function() {
 	//script for colapse arrow toggle
 	$('.accordion-toggle').on('click', function () {

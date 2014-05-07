@@ -55,8 +55,11 @@
 							
 							<div class="col-md-16 col-lg-16 ie_fix1">
 
+								<!--[if lte IE 9]>
+								<div id="slider1_container" style="position: relative; top: 0px; left: 0px; min-width: 1140px; height: 430px; background: #191919; overflow: hidden; background-color:#000000; margin-bottom:0px;">
+								<![endif]-->
 								<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 960px; height: 430px; background: #191919; overflow: hidden; background-color:#000000;">
-
+								
 									<!-- Loading Screen -->
 									<div u="loading" style="position: absolute; top: 0px; left: 0px;">
 										<div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
@@ -69,43 +72,43 @@
 									<!-- Slides Container -->
 									<div u="slides" style="cursor: move; position: absolute; left: 280px; top: 0px; width: 640px; height: 426px; overflow: hidden;">
 										<div>
-											<img u="image" src="images/product/vandal/1.png" />
+											<img u="image" src2="images/product/vandal/1.png" />
 											<img u="thumb" src="images/product/vandal/1s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/vandal/2.png" />
+											<img u="image" src2="images/product/vandal/2.png" />
 											<img u="thumb" src="images/product/vandal/2s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/vandal/3.png" />
+											<img u="image" src2="images/product/vandal/3.png" />
 											<img u="thumb" src="images/product/vandal/3s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/vandal/4.png" />
+											<img u="image" src2="images/product/vandal/4.png" />
 											<img u="thumb" src="images/product/vandal/4s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/vandal/5.png" />
+											<img u="image" src2="images/product/vandal/5.png" />
 											<img u="thumb" src="images/product/vandal/5s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/vandal/6.png" />
+											<img u="image" src2="images/product/vandal/6.png" />
 											<img u="thumb" src="images/product/vandal/6s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/vandal/7.png" />
+											<img u="image" src2="images/product/vandal/7.png" />
 											<img u="thumb" src="images/product/vandal/7s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/vandal/8.png" />
+											<img u="image" src2="images/product/vandal/8.png" />
 											<img u="thumb" src="images/product/vandal/8s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/vandal/9.png" />
+											<img u="image" src2="images/product/vandal/9.png" />
 											<img u="thumb" src="images/product/vandal/9s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/vandal/10.png" />
+											<img u="image" src2="images/product/vandal/10.png" />
 											<img u="thumb" src="images/product/vandal/10s.png" />
 										</div>
 									</div>
@@ -135,13 +138,14 @@
 								</div>
 								<!-- Jssor Slider End -->
 								<img width=0 height=0 />
+
+								<?php 
+									$youtube_path =  "xwmzawhMfMY";
+									include 'video.php'; 
+								?>
 							</div>	
 
-							<?php 
-								$youtube_path =  "xwmzawhMfMY";
-								include 'video.php'; 
-							?>
-
+							
 							<div class="col-md-16 col-lg-16">
 								<div class="panel-group" id="accordion">
 									<div class="panel panel-default">

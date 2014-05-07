@@ -68,51 +68,51 @@
 									<!-- Slides Container -->
 									<div u="slides" style="cursor: move; position: absolute; left: 280px; top: 0px; width: 640px; height: 426px; overflow: hidden;">
 										<div>
-											<img u="image" src="images/product/skull/1.png" />
+											<img u="image" src2="images/product/skull/1.png" />
 											<img u="thumb" src="images/product/skull/1s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/skull/2.png" />
+											<img u="image" src2="images/product/skull/2.png" />
 											<img u="thumb" src="images/product/skull/2s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/skull/3.png" />
+											<img u="image" src2="images/product/skull/3.png" />
 											<img u="thumb" src="images/product/skull/3s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/skull/4.png" />
+											<img u="image" src2="images/product/skull/4.png" />
 											<img u="thumb" src="images/product/skull/4s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/skull/5.png" />
+											<img u="image" src2="images/product/skull/5.png" />
 											<img u="thumb" src="images/product/skull/5s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/skull/6.png" />
+											<img u="image" src2="images/product/skull/6.png" />
 											<img u="thumb" src="images/product/skull/6s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/skull/7.png" />
+											<img u="image" src2="images/product/skull/7.png" />
 											<img u="thumb" src="images/product/skull/7s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/skull/8.png" />
+											<img u="image" src2="images/product/skull/8.png" />
 											<img u="thumb" src="images/product/skull/8s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/skull/9.png" />
+											<img u="image" src2="images/product/skull/9.png" />
 											<img u="thumb" src="images/product/skull/9s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/skull/10.png" />
+											<img u="image" src2="images/product/skull/10.png" />
 											<img u="thumb" src="images/product/skull/10s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/skull/11.png" />
+											<img u="image" src2="images/product/skull/11.png" />
 											<img u="thumb" src="images/product/skull/11s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/skull/12.png" />
+											<img u="image" src2="images/product/skull/12.png" />
 											<img u="thumb" src="images/product/skull/12s.png" />
 										</div>
 									</div>
@@ -142,12 +142,12 @@
 								</div>
 								<!-- Jssor Slider End -->
 								<img width=0 height=0 />
-							</div>	
 
-							<?php 
-								$youtube_path =  "3qDLSN9c864";
-								include 'video.php'; 
-							?>
+								<?php 
+									$youtube_path =  "3qDLSN9c864";
+									include 'video.php'; 
+								?>
+							</div>							
 
 							<div class="col-md-16 col-lg-16">
 								<div class="panel-group" id="accordion">

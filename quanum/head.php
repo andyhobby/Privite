@@ -7,12 +7,12 @@
 <!-- style for menu -->
 <link rel="stylesheet" type="text/css" href="css/menu_plugin/normalize.css" />
 <link rel="stylesheet" type="text/css" href="css/menu_plugin/component.css" />
-<script src="js/menu_plugin/modernizr.custom.js"></script>
+<script src="js/menu_plugin/modernizr.custom.js" async></script>
 <!-- end style for menu -->
 
 <link rel="stylesheet" type="text/css" href="css/bootstrap_plugin/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
-<script src="js/jquery-1.10.2.js"></script>
+<script src="js/jquery-1.10.2.js" async></script>
 
 <!-- style for fancybox -->
 <link rel="stylesheet" href="css/fancybox_plugin/jquery.fancybox.css" type="text/css" media="screen" />

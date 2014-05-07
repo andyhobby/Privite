@@ -65,10 +65,7 @@ if (($IE6 == 1) || ($IE7 == 1)) {
 							</div>
 							
 							<div class="col-md-16 col-lg-16 ie8_fix">
-								<!--[if lte IE 9]>
-								<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 960px; height: 430px; background: #191919; overflow: hidden; background-color:#000000; margin-bottom:0px;">
-								<![endif]-->
-								<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 960px; height: 430px; background: #191919; overflow: hidden; background-color:#000000;">
+								<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 960px; height: 430px; overflow: hidden; background-color:#000000;">
 
 									<!-- Loading Screen -->
 									<div u="loading" style="position: absolute; top: 0px; left: 0px;">
@@ -82,63 +79,63 @@ if (($IE6 == 1) || ($IE7 == 1)) {
 									<!-- Slides Container -->
 									<div u="slides" style="cursor: move; position: absolute; left: 280px; top: 0px; width: 640px; height: 426px; overflow: hidden;">
 										<div>
-											<img u="image" src="images/product/relentless/1.png" />
+											<img u="image" src2="images/product/relentless/1.png" />
 											<img u="thumb" src="images/product/relentless/1s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/relentless/2.png" />
+											<img u="image" src2="images/product/relentless/2.png" />
 											<img u="thumb" src="images/product/relentless/2s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/relentless/3.png" />
+											<img u="image" src2="images/product/relentless/3.png" />
 											<img u="thumb" src="images/product/relentless/3s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/relentless/4.png" />
+											<img u="image" src2="images/product/relentless/4.png" />
 											<img u="thumb" src="images/product/relentless/4s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/relentless/5.png" />
+											<img u="image" src2="images/product/relentless/5.png" />
 											<img u="thumb" src="images/product/relentless/5s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/relentless/6.png" />
+											<img u="image" src2="images/product/relentless/6.png" />
 											<img u="thumb" src="images/product/relentless/6s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/relentless/7.png" />
+											<img u="image" src2="images/product/relentless/7.png" />
 											<img u="thumb" src="images/product/relentless/7s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/relentless/8.png" />
+											<img u="image" src2="images/product/relentless/8.png" />
 											<img u="thumb" src="images/product/relentless/8s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/relentless/9.png" />
+											<img u="image" src2="images/product/relentless/9.png" />
 											<img u="thumb" src="images/product/relentless/9s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/relentless/10.png" />
+											<img u="image" src2="images/product/relentless/10.png" />
 											<img u="thumb" src="images/product/relentless/10s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/relentless/11.png" />
+											<img u="image" src2="images/product/relentless/11.png" />
 											<img u="thumb" src="images/product/relentless/11s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/relentless/12.png" />
+											<img u="image" src2="images/product/relentless/12.png" />
 											<img u="thumb" src="images/product/relentless/12s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/relentless/13.png" />
+											<img u="image" src2="images/product/relentless/13.png" />
 											<img u="thumb" src="images/product/relentless/13s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/relentless/14.png" />
+											<img u="image" src2="images/product/relentless/14.png" />
 											<img u="thumb" src="images/product/relentless/14s.png" />
 										</div>
 										<div>
-											<img u="image" src="images/product/relentless/15.png" />
+											<img u="image" src2="images/product/relentless/15.png" />
 											<img u="thumb" src="images/product/relentless/15s.png" />
 										</div>
 									</div>
@@ -168,12 +165,13 @@ if (($IE6 == 1) || ($IE7 == 1)) {
 								</div>
 								<!-- Jssor Slider End -->
 								<img width=0 height=0 />
+
+								<?php 
+									$youtube_path =  "tt-jdNLJaLw";
+									include 'video.php'; 
+								?>
 							</div>	
-							
-							<?php 
-								$youtube_path =  "tt-jdNLJaLw";
-								include 'video.php'; 
-							?>
+
 
 							<div class="col-md-16 col-lg-16">
 								<div class="panel-group" id="accordion">
@@ -290,6 +288,7 @@ if (($IE6 == 1) || ($IE7 == 1)) {
 									</div>
 								</div>
 							</div>
+							
 						</div>				
 					</div>
 					<!-- end bootstrap main layout -->
